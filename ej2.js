@@ -3,12 +3,12 @@ const Auto = function(){
 }
 
 Auto.prototype.acelerar = function(num1){
-    this.velocidad = this.velocidad + num1;
-    return this.inicio
+    this.velocidad += num1;
+    return this.velocidad
 }
 
 Auto.prototype.frenar = function(num2){
-    this.velocidad = this.velocidad - num2;
+    this.velocidad -= num2;
     if (this.velocidad <0){this.velocidad = 0}
     return this.velocidad
 }
